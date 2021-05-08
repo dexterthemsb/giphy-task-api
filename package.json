@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node dist/server.js",
-    "dev": "set NODE_ENV=DEV&&nodemon --exec npx ts-node src/server.ts",
+    "dev": "set NODE_ENV=development&&nodemon --exec npx ts-node src/server.ts",
     "build": "npx tsc -p ."
   },
   "author": "Manmohan Singh",

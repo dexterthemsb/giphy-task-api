@@ -1,6 +1,6 @@
 const environtmentVariables: string[] = [
-  "MONGODB_PROD_URI",
-  "MONGODB_DEV_URI",
+  "MONGODB_PRODUCTION_URI",
+  "MONGODB_DEVELOPMENT_URI",
   "JWT_TOKEN_PRIVATE_KEY",
   "GIPHY_API_KEY"
 ];

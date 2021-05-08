@@ -19,7 +19,7 @@ const app = express();
 app.use(cors());
 
 // env
-const mongoURI: string = process.env[`MONGODB_${process.env.NODE_ENV}_URI`]!;
+const mongoURI: string = process.env[`MONGODB_${process.env.NODE_ENV?.toUpperCase()}_URI`]!;
 
 // init mongoose & start the server
 mongoose
