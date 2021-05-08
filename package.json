@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "set NODE_ENV=PROD&&node dist/server.js",
+    "start": "node dist/server.js",
     "dev": "set NODE_ENV=DEV&&nodemon --exec npx ts-node src/server.ts",
     "build": "tsc -p ."
   },
