@@ -26,7 +26,9 @@ mongoose
   .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true })
   .then(() => {
     console.log(`\nConnected to ${process.env.NODE_ENV} database`);
-    app.listen(5000, () => console.log(`Server started in ${process.env.NODE_ENV} environtment\n`));
+    app.listen(process.env.PORT || 5000, () =>
+      console.log(`Server started in ${process.env.NODE_ENV} environtment\n`)
+    );
   })
   .catch(err => console.log(err));
 
